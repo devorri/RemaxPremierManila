@@ -1,0 +1,60 @@
+:root {
+  --brandPrimary-main: #003da5;
+  --brandPrimary-dark: #001d48;
+  --brandPrimary-darker: #001538;
+  --brandSecondary-main: #dc1c2e;
+  --brandSecondary-hover: #b81423;
+  --footer-bg: #040e2e;
+  --text-dark: #001f52;
+  --text-body: #4a5568;
+  --text-muted: #718096;
+  --bg-light: #ffffff;
+  --border-color: #e2e8f0;
+  --nav-accent: #dc1c2e;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
