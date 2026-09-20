@@ -20,6 +20,7 @@ const AboutPage: React.FC = () => {
               src="https://www.remaxcapital.ph/about-us/hero.png"
               alt="REMAX Premier team gathering"
               loading="eager"
+              decoding="async"
             />
           </div>
         </div>
@@ -45,6 +46,8 @@ const AboutPage: React.FC = () => {
                 className="founding-image"
                 src="https://www.remaxcapital.ph/about-us/founding-1.png"
                 alt="REMAX Premier founding members"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="founding-image-wrapper founding-image-offset">
@@ -52,6 +55,8 @@ const AboutPage: React.FC = () => {
                 className="founding-image"
                 src="https://www.remaxcapital.ph/about-us/founding-2.png"
                 alt="REMAX Premier team event"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -77,6 +82,8 @@ const AboutPage: React.FC = () => {
               className="about-vision-image"
               src="https://www.remaxcapital.ph/about-us/vision.png"
               alt="REMAX Premier Awards 2025"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="about-vision-text">

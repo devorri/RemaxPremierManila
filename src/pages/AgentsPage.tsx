@@ -232,6 +232,8 @@ const PartnersPage: React.FC = () => {
                       src={partner.image}
                       alt={partner.name}
                       className="partner-card-photo"
+                      loading="lazy"
+                      decoding="async"
                     />
                     {/* Dynamic Mouse Tracking Pattern Overlay */}
                     <div className="mouse-track-pattern" />
@@ -350,6 +352,7 @@ const PartnersPage: React.FC = () => {
                     src={selectedPartner.image}
                     alt={selectedPartner.name}
                     className="partner-modal-photo"
+                    decoding="async"
                   />
                   {/* Dynamic Mouse Tracking Pattern Overlay */}
                   <div className="mouse-track-pattern" />

@@ -12,6 +12,8 @@ export const Logo: React.FC<LogoProps> = ({ className = '' }) => {
       <img
         src={logoImage}
         alt="REMAX Premier Manila"
+        loading="eager"
+        decoding="async"
         style={{ height: '100px', width: 'auto', objectFit: 'contain' }}
       />
     </div>

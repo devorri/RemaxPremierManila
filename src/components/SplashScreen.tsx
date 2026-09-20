@@ -31,6 +31,8 @@ export const SplashScreen: React.FC = () => {
           src={logoImage}
           alt="REMAX Premier Manila"
           className="splash-logo"
+          loading="eager"
+          decoding="async"
         />
       </div>
     </div>

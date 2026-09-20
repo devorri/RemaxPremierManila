@@ -66,7 +66,13 @@ export const Locations: React.FC = () => {
           {offices.map((office) => (
             <div key={office.name} className="office-card">
               <div className="office-image-wrapper">
-                <img src={office.image} alt={office.name} className="office-image" />
+                <img 
+                  src={office.image} 
+                  alt={office.name} 
+                  className="office-image" 
+                  loading="lazy" 
+                  decoding="async" 
+                />
               </div>
               <div className="office-info">
                 <h3 className="office-name">{office.name}</h3>

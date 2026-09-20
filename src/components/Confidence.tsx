@@ -11,6 +11,8 @@ export const Confidence: React.FC = () => {
             src={propertyImg} 
             alt="Luxury Interior" 
             className="confidence-image"
+            loading="lazy"
+            decoding="async"
           />
           {/* Subtle slider dots like original */}
           <div className="confidence-dots">
