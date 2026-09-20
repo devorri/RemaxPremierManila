@@ -44,7 +44,7 @@ export const Locations: React.FC = () => {
             Nationwide Reach.
           </h2>
           <p className="locations-description">
-            REMAX Capital is positioned at the heart of key business districts allowing us to serve clients efficiently across Metro Manila and beyond.
+            REMAX Premier is positioned at the heart of key business districts allowing us to serve clients efficiently across Metro Manila and beyond.
           </p>
 
           <div className="locations-map-wrapper">

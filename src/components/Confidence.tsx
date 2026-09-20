@@ -28,7 +28,7 @@ export const Confidence: React.FC = () => {
               For Clients Who<br />Value Confidence
             </h2>
             <p className="confidence-description">
-              Buying, selling, leasing, or investing in property is a major decision and confidence matters. With REMAX Capital's expertise, network, and commitment to service excellence, clients gain more than transactions; they gain trusted advisors.
+              Buying, selling, leasing, or investing in property is a major decision and confidence matters. With REMAX Premier's expertise, network, and commitment to service excellence, clients gain more than transactions; they gain trusted advisors.
             </p>
             <div className="confidence-actions">
               <a href="#find-property" className="btn-confidence">

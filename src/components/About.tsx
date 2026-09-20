@@ -8,10 +8,10 @@ export const About: React.FC = () => {
         <div className="about-left">
           <h2 className="about-heading">
             We are<br />
-            <span className="brand-accent-text">REMAX Capital.</span>
+            <span className="brand-accent-text">REMAX Premier.</span>
           </h2>
           <p className="about-description">
-            REMAX Capital has been a trusted name in Philippine real estate, powered by the global strength of the brand and driven by a culture of excellence, integrity, and results.
+            REMAX Premier has been a trusted name in Philippine real estate, powered by the global strength of the brand and driven by a culture of excellence, integrity, and results.
           </p>
           <a href="#learn-more" className="btn-outline-red">
             Learn More
@@ -32,7 +32,7 @@ export const About: React.FC = () => {
 
           <div className="stat-card">
             <div className="stat-number">2,397</div>
-            <div className="stat-label">All REMAX<br />Capital Listings</div>
+            <div className="stat-label">All REMAX<br />Premier Listings</div>
           </div>
 
           <div className="stat-card">
