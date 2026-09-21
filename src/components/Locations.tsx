@@ -44,7 +44,7 @@ export const Locations: React.FC = () => {
             Nationwide Reach.
           </h2>
           <p className="locations-description">
-            REMAX Premier is positioned at the heart of key business districts allowing us to serve clients efficiently across Metro Manila and beyond.
+            REMAX Premier and its Broker Network are positioned at the heart of key business districts allowing us to serve clients efficiently across Metro Manila and beyond.
           </p>
 
           <div className="locations-map-wrapper">
@@ -66,12 +66,12 @@ export const Locations: React.FC = () => {
           {offices.map((office) => (
             <div key={office.name} className="office-card">
               <div className="office-image-wrapper">
-                <img 
-                  src={office.image} 
-                  alt={office.name} 
-                  className="office-image" 
-                  loading="lazy" 
-                  decoding="async" 
+                <img
+                  src={office.image}
+                  alt={office.name}
+                  className="office-image"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="office-info">

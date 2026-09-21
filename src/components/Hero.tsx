@@ -16,11 +16,10 @@ export const Hero: React.FC = () => {
         <div className="hero-content">
           <p className="hero-subtitle">REMAX Premier Manila</p>
           <h1 className="hero-title">
-            The Go-To Real Estate Brokerage for Excellent Agents and Properties
+            Your Property Deserves the Right Strategy.
           </h1>
           <p className="hero-description">
-            Trusted by top professionals across Metro Manila. We connect you with licensed brokers 
-            and premium properties in the most sought-after locations.
+            Trusted real estate guidance for owners who want to sell, lease, or maximize the value of their property.
           </p>
 
           <div className="hero-cta-group">

@@ -1,4 +1,39 @@
 import React, { useEffect } from 'react';
+import gumersindoImg from '../assets/partners/gumersindo.png';
+import glennisImg from '../assets/partners/glennis.png';
+import carloImg from '../assets/partners/carlo.png';
+import maryAnneImg from '../assets/partners/maryanne.png';
+
+const partners = [
+  {
+    name: 'Gumersindo Camcam',
+    company: 'Chairman',
+    phone: '(+63) 918 940 3919',
+    email: 'juncamcam@yahoo.com',
+    image: gumersindoImg,
+  },
+  {
+    name: 'Glennis DR Nitafan',
+    company: 'President',
+    phone: '(+63) 917 822 5798',
+    email: 'gnitafan@gmail.com',
+    image: glennisImg,
+  },
+  {
+    name: 'Carlo Lopez',
+    company: 'Partner',
+    phone: '(+63) 917 891 0290',
+    email: 'carlorlopez@gmail.com',
+    image: carloImg,
+  },
+  {
+    name: 'Mary Anne Meily',
+    company: 'Associate',
+    phone: '(+63) 939 997 8888',
+    email: 'maryannemeily14@gmail.com',
+    image: maryAnneImg,
+  },
+];
 
 const AboutPage: React.FC = () => {
   useEffect(() => {
@@ -36,9 +71,7 @@ const AboutPage: React.FC = () => {
             <p className="about-body-text">
               Founded in 2014, REMAX Premier was born from a shared vision among four friends; a seasoned entrepreneur, real estate broker, banker, and lawyer, who aimed to elevate the standards of the Philippine real estate industry. Through a franchise agreement with RE/MAX Philippines, REMAX Premier officially began its journey toward real estate excellence.
             </p>
-            <p className="about-body-text">
-              From its first office in Movenue, Makati in 2015, REMAX Premier steadily expanded, moving to Rockwell, Makati in 2017, and continuing to grow its presence across Metro Manila. Today, the company is home to PRC-licensed and accredited agents delivering top-tier service.
-            </p>
+
           </div>
           <div className="founding-images">
             <div className="founding-image-wrapper">
@@ -68,7 +101,7 @@ const AboutPage: React.FC = () => {
         <div className="about-quote-inner">
           <blockquote className="about-blockquote">
             <p>
-              Our focus is building a holistic environment that prioritizes agent growth, client satisfaction, professional integrity, and long-term success.
+              "At RE/MAX Premier, your goals come first. We pair you with agents who act with integrity, communicate clearly, and stay with you until the deal is done, so you can buy, sell, or invest with confidence."
             </p>
           </blockquote>
         </div>
@@ -88,11 +121,56 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="about-vision-text">
             <h2 className="about-section-heading">
-              From Vision <em>to Impact</em>
+              Service you <em>can trust</em>
             </h2>
             <p className="about-body-text">
-              REMAX Premier continues to invest in tools, training, and systems that empower agents to build sustainable real estate businesses. Guided by its core values of professionalism, ethics, innovation, and collaboration, the company remains committed to delivering exceptional service and shaping the future of real estate in the Philippines.
-            </p>
+              "REMAX Premier invests in the tools, training, and systems that help our agents serve you better. Guided by professionalism, ethics, innovation, and collaboration, we're committed to exceptional service at every step of your property journey and to shaping the future of real estate in the Philippines."            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="partners-section">
+        <div className="partners-inner">
+          <h2 className="about-section-heading partners-heading">
+            Our <em>Partners</em>
+          </h2>
+          <p className="about-body-text partners-subtitle">
+            Meet the dedicated professionals behind REMAX Premier who bring expertise, integrity, and passion to every transaction.
+          </p>
+          <div className="partners-grid">
+            {partners.map((partner) => (
+              <div className="partner-card" key={partner.name}>
+                <div className="partner-image-wrapper">
+                  <img
+                    className="partner-image"
+                    src={partner.image}
+                    alt={partner.name}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="partner-info">
+                  <h3 className="partner-name">{partner.name}</h3>
+                  <span className="partner-company">{partner.company}</span>
+                  <div className="partner-contact">
+                    <a href={`tel:${partner.phone.replace(/\s|\(|\)/g, '')}`} className="partner-contact-link">
+                      <svg className="partner-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                      {partner.phone}
+                    </a>
+                    <a href={`mailto:${partner.email}`} className="partner-contact-link">
+                      <svg className="partner-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                      </svg>
+                      {partner.email}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -101,3 +179,4 @@ const AboutPage: React.FC = () => {
 };
 
 export default AboutPage;
+

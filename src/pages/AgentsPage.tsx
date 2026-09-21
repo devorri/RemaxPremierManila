@@ -1,5 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import logoImage from '../assets/remax-premier-logo.png';
+import gumersindoImg from '../assets/partners/gumersindo.png';
+import glennisImg from '../assets/partners/glennis.png';
+import carloImg from '../assets/partners/carlo.png';
+import maryAnneImg from '../assets/partners/maryanne.png';
 
 interface Partner {
   name: string;
@@ -11,21 +15,10 @@ interface Partner {
 }
 
 const allPartners: Partner[] = [
-  { name: "Aaron Silvestre", role: "Licensed Broker", locations: "PARAÑAQUE, MUNTINLUPA, LAS PIÑAS", image: "https://www.remaxcapital.ph/agents/aaron-silvestre.png", phone: "+63 927 347 6429", email: "aaron.silvestre.remax@gmail.com" },
-  { name: "Aleta Yao De Guzman", role: "Partner", locations: "BGC", image: "https://www.remaxcapital.ph/agents/aleta-yao.png", phone: "+63 917 592 5925", email: "altaprimerealty@gmail.com" },
-  { name: "Alexandra Kho", role: "Licensed Broker", locations: "Unspecified", image: "https://www.remaxcapital.ph/agents/alexandra-kho.png", phone: "+63 917 529 8409", email: "sandrak.remax@gmail.com" },
-  { name: "Andrei Co", role: "Accredited Salesperson", locations: "MAKATI, BGC", image: "https://www.remaxcapital.ph/agents/andrei-co.png", phone: "+63 917 853 7778", email: "coandrei.remaxcapital@gmail.com" },
-  { name: "Andrew Valera", role: "Licensed Broker", locations: "MAKATI", image: "https://www.remaxcapital.ph/agents/andrew-valera.png", phone: "+63 915 698 5853", email: "andrew.remaxcapital@gmail.com" },
-  { name: "Angel Souza", role: "Licensed Broker", locations: "QUEZON CITY", image: "https://www.remaxcapital.ph/agents/angel-souza.png", phone: "+63 917 888 0626", email: "angel@propertyhuntmanila.com" },
-  { name: "Angela See", role: "Accredited Salesperson", locations: "Unspecified", image: "https://www.remaxcapital.ph/agents/angela-see.png", phone: "+63 917 537 1939", email: "angelabeatricesee@gmail.com" },
-  { name: "Anton Bocaling", role: "Partner", locations: "PARAÑAQUE, MUNTINLUPA, LAS PIÑAS", image: "https://www.remaxcapital.ph/agents/anton-bocaling.png", phone: "+63 917 884 8363", email: "broker.anton@remaxcapital.ph" },
-  { name: "Anya Ambrosio", role: "Partner", locations: "ROCKWELL, MAKATI, BGC, BEL-AIR", image: "https://www.remaxcapital.ph/agents/anya-ambrosio.png", phone: "+63 977 807 1476", email: "anyam.remax@gmail.com" },
-  { name: "Art Evangelista", role: "Partner", locations: "PARAÑAQUE, MUNTINLUPA, LAS PIÑAS", image: "https://www.remaxcapital.ph/agents/art-evangelista.png", phone: "+63 917 535 3940", email: "artmevangelista@remaxcapital.ph" },
-  { name: "Benj Jazmines", role: "Partner", locations: "MAKATI, ROCKWELL", image: "https://www.remaxcapital.ph/agents/benj-jazmines.png", phone: "+63 917 724 5556", email: "bjazmines.remax@gmail.com" },
-  { name: "Betty Gorospe", role: "Partner", locations: "QUEZON CITY", image: "https://www.remaxcapital.ph/agents/betty-gorospe.png", phone: "+63 917 886 3955", email: "bettyo.remax@gmail.com" },
-  { name: "Cao Ocampo", role: "Licensed Broker", locations: "BGC, MAKATI, ORTIGAS, QUEZON CITY", image: "https://www.remaxcapital.ph/agents/cao-ocampo.png", phone: "+63 917 838 7399", email: "caoocampo.remax@gmail.com" },
-  { name: "Carlo Banzon", role: "Partner", locations: "MAKATI, NASUGBU, BATANGAS, NUVALI", image: "https://www.remaxcapital.ph/agents/carlo-banzon.png", phone: "+63 917 894 1239", email: "cbanzon@remaxcapital.ph" },
-  { name: "Carlos De Guzman", role: "Licensed Broker", locations: "BGC, MAKATI, ORTIGAS, QUEZON CITY", image: "https://www.remaxcapital.ph/agents/carlos-de-guzman.png", phone: "+63 995 434 1665", email: "cdeguzman.remaxcapital@gmail.com" },
+  { name: "Gumersindo Camcam", role: "Chairman", locations: "REMAX Premier", image: gumersindoImg, phone: "(+63) 918 940 3919", email: "juncamcam@yahoo.com" },
+  { name: "Glennis DR Nitafan", role: "President", locations: "REMAX Premier", image: glennisImg, phone: "(+63) 917 822 5798", email: "gnitafan@gmail.com" },
+  { name: "Carlo Lopez", role: "Partner", locations: "REMAX Premier", image: carloImg, phone: "(+63) 917 891 0290", email: "carlorlopez@gmail.com" },
+  { name: "Mary Anne Meily", role: "Associate", locations: "REMAX Premier", image: maryAnneImg, phone: "(+63) 939 997 8888", email: "maryannemeily14@gmail.com" },
 ];
 
 const PARTNERS_PER_PAGE = 15;

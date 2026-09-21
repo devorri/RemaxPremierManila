@@ -6,10 +6,10 @@ interface FaqItem {
 }
 
 const faqData: FaqItem[] = [
-  { question: "What service does REMAX Premier offer?", answer: "We specialize in real estate sales, leasing, and investment advisory for residential, commercial, and luxury properties in the Philippines." },
+  { question: "What service does REMAX Premier offer?", answer: "We specialize in exclusive marketing, real estate sales, leasing, and investment advisory for residential, commercial, and luxury properties in the Philippines." },
   { question: "Are your closing services available for clients who did not transact with your brokers?", answer: "Yes! We offer transfer works, due diligence, tax assistance, annotation processing, escrow assistance, loan applications, and more. Our team ensures a smooth and efficient closing process, regardless of whether the transaction was handled by our brokers." },
   { question: "How can I contact REMAX Premier or list my property?", answer: "You can reach us via direct message on our social media accounts (Facebook & Instagram), email us at gnitafan@remax.net, or call us at 0917 822 5798. We're always ready to assist!" },
-  { question: "Why choose REMAX Premier?", answer: "With a network of top-tier real estate agents, and market expertise, we provide seamless transactions and excellent service for buyers, sellers, and investors." },
+  { question: "Why choose REMAX Premier?", answer: "With a network of top-tier real estate professionals, we provide seamless transactions and excellent service for buyers, sellers, and investors." },
   { question: "Do you assist first-time homebuyers?", answer: "Yes! We guide first-time buyers through every step, from property selection to financing and closing." },
   { question: "How can I schedule a property viewing?", answer: "Simply message us on Facebook or Instagram to inquire about a property, and we'll connect you with an agent to arrange a viewing at your convenience." },
   { question: "Does REMAX Premier offer career opportunities for realtors?", answer: "Yes! We provide training, mentorship, and a strong support system for aspiring and experienced real estate professionals." },
