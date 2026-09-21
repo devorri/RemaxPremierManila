@@ -2341,14 +2341,21 @@ a.contact-info-value:hover {
   }
 
   .agents-grid-section,
-  .faqs-accordion-section,
-  .contact-body-section {
+  .faqs-accordion-section {
     padding: 48px 24px 80px;
   }
 
-  .contact-body-inner {
+  .contact-main-section {
+    padding: 120px 24px 60px;
+  }
+
+  .contact-main-inner {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .contact-form-card {
+    padding: 32px 24px;
   }
 
   .desktop-break {
@@ -2365,8 +2372,16 @@ a.contact-info-value:hover {
     grid-template-columns: 1fr;
   }
 
-  .contact-form-col {
-    padding: 24px;
+  .contact-info-heading {
+    font-size: 36px;
+  }
+
+  .contact-form-submit-row {
+    justify-content: center;
+  }
+
+  .contact-form-submit {
+    width: 100%;
   }
 
   .contact-map-section {
