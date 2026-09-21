@@ -2179,6 +2179,13 @@
   color: #ffffff;
   font-weight: 600;
   line-height: 1.5;
+  text-decoration: none;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
+}
+
+a.contact-info-value:hover {
+  text-decoration: underline;
+  opacity: 0.85;
 }
 
 /* Contact Form Card (Right) */

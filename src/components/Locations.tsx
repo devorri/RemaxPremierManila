@@ -13,7 +13,7 @@ interface OfficeLocation {
 const offices: OfficeLocation[] = [
   {
     name: 'BGC',
-    address: 'Unit 1414, 14th Floor, One Park Drive, BGC, Taguig City',
+    address: '24th Floor, Philippine Stock Exchange Tower, 26th corner 5th Avenue, Bonifacio Global City, Taguig',
     image: bgcImg,
   },
   {

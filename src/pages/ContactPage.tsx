@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => {
                     <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <span className="contact-info-value">+63 917 898 4917</span>
+                <a href="tel:09178225798" className="contact-info-value">+63 917 822 5798</a>
               </div>
 
               <div className="contact-info-item">
@@ -54,7 +54,7 @@ const ContactPage: React.FC = () => {
                     <path d="M3 7l9 5 9-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <span className="contact-info-value">listings@remaxpremier.ph</span>
+                <a href="mailto:gnitafan@remax.net" className="contact-info-value">gnitafan@remax.net</a>
               </div>
 
               <div className="contact-info-item">
@@ -64,7 +64,7 @@ const ContactPage: React.FC = () => {
                     <circle cx="12" cy="9" r="2.5" stroke="currentColor" strokeWidth="1.5" />
                   </svg>
                 </div>
-                <span className="contact-info-value">5th Floor, Phinma Plaza, Plaza Drive, Rockwell Center, Makati City</span>
+                <span className="contact-info-value">24th Floor, Philippine Stock Exchange Tower, 26th corner 5th Avenue, Bonifacio Global City Taguig, Metro Manila, Philippines</span>
               </div>
             </div>
           </div>
