@@ -17,17 +17,17 @@ const offices: OfficeLocation[] = [
     image: bgcImg,
   },
   {
-    name: 'Rockwell',
+    name: 'Forbes Park / High End Villages',
     address: '5th Floor, Phinma Plaza, Rockwell Center, Makati City',
     image: rockwellImg,
   },
   {
-    name: 'San Juan',
+    name: 'Beaches and Resorts',
     address: '135 Hoover Street, Addition Hills, San Juan City',
     image: sanJuanImg,
   },
   {
-    name: 'Alabang',
+    name: 'Rawland, Industrial, Commercial',
     address: 'Unit 1105 Page 1 Building, Acacia Ave, Ayala Alabang, Muntinlupa City',
     image: alabangImg,
   },

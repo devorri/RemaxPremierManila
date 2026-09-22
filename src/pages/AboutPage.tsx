@@ -3,6 +3,10 @@ import gumersindoImg from '../assets/partners/gumersindo.png';
 import glennisImg from '../assets/partners/glennis.png';
 import carloImg from '../assets/partners/carlo.png';
 import maryAnneImg from '../assets/partners/maryanne.png';
+import aboutHeroImg from '../assets/gallery/hero.png';
+import foundingStoryImg1 from '../assets/gallery/gallery1.png';
+import foundingStoryImg2 from '../assets/gallery/gallery2.png';
+import trustImg from '../assets/gallery/gallery3.png';
 
 const partners = [
   {
@@ -52,7 +56,7 @@ const AboutPage: React.FC = () => {
           <div className="about-hero-banner-media">
             <img
               className="about-hero-banner-image"
-              src="https://www.remaxcapital.ph/about-us/hero.png"
+              src={aboutHeroImg}
               alt="REMAX Premier team gathering"
               loading="eager"
               decoding="async"
@@ -77,7 +81,7 @@ const AboutPage: React.FC = () => {
             <div className="founding-image-wrapper">
               <img
                 className="founding-image"
-                src="https://www.remaxcapital.ph/about-us/founding-1.png"
+                src={foundingStoryImg1}
                 alt="REMAX Premier founding members"
                 loading="lazy"
                 decoding="async"
@@ -86,7 +90,7 @@ const AboutPage: React.FC = () => {
             <div className="founding-image-wrapper founding-image-offset">
               <img
                 className="founding-image"
-                src="https://www.remaxcapital.ph/about-us/founding-2.png"
+                src={foundingStoryImg2}
                 alt="REMAX Premier team event"
                 loading="lazy"
                 decoding="async"
@@ -113,7 +117,7 @@ const AboutPage: React.FC = () => {
           <div className="about-vision-image-wrapper">
             <img
               className="about-vision-image"
-              src="https://www.remaxcapital.ph/about-us/vision.png"
+              src={trustImg}
               alt="REMAX Premier Awards 2025"
               loading="lazy"
               decoding="async"
