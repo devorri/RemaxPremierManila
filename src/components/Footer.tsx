@@ -30,7 +30,6 @@ export const Footer: React.FC = () => {
             </div>
             <div className="footer-nav-col">
               <Link to="/#locations" className="footer-link">Locations</Link>
-              <a href="#agent-login" className="footer-link">Agent Login</a>
             </div>
           </div>
         </div>
