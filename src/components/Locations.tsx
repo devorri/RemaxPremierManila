@@ -1,8 +1,8 @@
 import React from 'react';
 import bgcImg from '../assets/office_bgc.jpg';
-import rockwellImg from '../assets/office_rockwell.jpg';
-import sanJuanImg from '../assets/office_sanjuan.jpg';
-import alabangImg from '../assets/office_alabang.jpg';
+import forbesImg from '../assets/places/forbes.png';
+import beachesImg from '../assets/places/beaches.png';
+import rawlandImg from '../assets/places/rawland.png';
 
 interface OfficeLocation {
   name: string;
@@ -19,17 +19,17 @@ const offices: OfficeLocation[] = [
   {
     name: 'Forbes Park / High End Villages',
     address: '5th Floor, Phinma Plaza, Rockwell Center, Makati City',
-    image: rockwellImg,
+    image: forbesImg,
   },
   {
     name: 'Beaches and Resorts',
     address: '135 Hoover Street, Addition Hills, San Juan City',
-    image: sanJuanImg,
+    image: beachesImg,
   },
   {
     name: 'Rawland, Industrial, Commercial',
     address: 'Unit 1105 Page 1 Building, Acacia Ave, Ayala Alabang, Muntinlupa City',
-    image: alabangImg,
+    image: rawlandImg,
   },
 ];
 
