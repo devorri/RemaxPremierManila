@@ -21,23 +21,28 @@ export const About: React.FC = () => {
         {/* Right Column: Key Statistics Grid */}
         <div className="about-stats-grid">
           <div className="stat-card">
-            <div className="stat-number">11</div>
-            <div className="stat-label">Years in the<br />Business</div>
+            <div className="stat-number">₱12B+</div>
+            <div className="stat-label">Property Value<br />Transacted</div>
           </div>
 
           <div className="stat-card">
-            <div className="stat-number">90</div>
-            <div className="stat-label">Licensed Brokers and<br />Accredited Salespersons</div>
+            <div className="stat-number">14+</div>
+            <div className="stat-label">Years of<br />Experience</div>
           </div>
 
           <div className="stat-card">
-            <div className="stat-number">2,397</div>
-            <div className="stat-label">All REMAX<br />Premier Listings</div>
+            <div className="stat-number">1,097+</div>
+            <div className="stat-label">Property<br />Opportunities</div>
           </div>
 
           <div className="stat-card">
-            <div className="stat-number">40</div>
-            <div className="stat-label">Developer<br />Partners</div>
+            <div className="stat-number">110+</div>
+            <div className="stat-label">Licensed Real Estate<br />Professionals Network</div>
+          </div>
+
+          <div className="stat-card">
+            <div className="stat-number">50+</div>
+            <div className="stat-label">Developer &amp; Project<br />Partnerships</div>
           </div>
         </div>
       </div>

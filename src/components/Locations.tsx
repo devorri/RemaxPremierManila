@@ -1,5 +1,5 @@
 import React from 'react';
-import bgcImg from '../assets/office_bgc.jpg';
+import bgcImg from '../assets/places/bgc.jpg';
 import forbesImg from '../assets/places/forbes.png';
 import beachesImg from '../assets/places/beaches.png';
 import rawlandImg from '../assets/places/rawland.png';
@@ -18,17 +18,17 @@ const offices: OfficeLocation[] = [
   },
   {
     name: 'Forbes Park / High End Villages',
-    address: '5th Floor, Phinma Plaza, Rockwell Center, Makati City',
+    address: 'Resident broker knows stories and histories of these properties. Including off market and discreet properties for sale.',
     image: forbesImg,
   },
   {
     name: 'Beaches and Resorts',
-    address: '135 Hoover Street, Addition Hills, San Juan City',
+    address: 'Metro Manila and around the country. Batangas, Boracay, El Nido',
     image: beachesImg,
   },
   {
     name: 'Rawland, Industrial, Commercial',
-    address: 'Unit 1105 Page 1 Building, Acacia Ave, Ayala Alabang, Muntinlupa City',
+    address: 'For Developers, Retirees, and Investors',
     image: rawlandImg,
   },
 ];

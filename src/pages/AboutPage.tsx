@@ -6,7 +6,7 @@ import maryAnneImg from '../assets/partners/maryanne.png';
 import aboutHeroImg from '../assets/gallery/hero.png';
 import foundingStoryImg1 from '../assets/gallery/gallery1.png';
 import foundingStoryImg2 from '../assets/gallery/gallery2.png';
-import trustImg from '../assets/gallery/gallery3.png';
+import trustImg from '../assets/gallery/gallery4.png';
 
 const partners = [
   {
