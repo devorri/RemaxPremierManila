@@ -1,25 +1,69 @@
-import React from 'react';
-import propertyImg from '../assets/property_confidence.jpg';
+import React, { useEffect, useState } from 'react';
+import galleryImage1 from '../assets/gallery/newgallery3.png';
+import galleryImage2 from '../assets/gallery/newgallery1.png';
+import galleryImage3 from '../assets/gallery/newgallery2.png';
+import galleryImage4 from '../assets/gallery/gallery3.png';
+
+const galleryImages = [
+  { src: galleryImage1, alt: 'Luxury property interior' },
+  { src: galleryImage2, alt: 'Elegant property interior' },
+  { src: galleryImage3, alt: 'Refined living space' },
+  { src: galleryImage4, alt: 'Premium property interior' },
+];
 
 export const Confidence: React.FC = () => {
+  const [{ activeSlide, previousSlide }, setSlideState] = useState({
+    activeSlide: 0,
+    previousSlide: 0,
+  });
+
+  useEffect(() => {
+    const slideshow = window.setInterval(() => {
+      setSlideState(({ activeSlide: currentSlide }) => ({
+        previousSlide: currentSlide,
+        activeSlide: (currentSlide + 1) % galleryImages.length,
+      }));
+    }, 4000);
+
+    return () => window.clearInterval(slideshow);
+  }, []);
+
+  const goToSlide = (slideIndex: number) => {
+    setSlideState(({ activeSlide: currentSlide }) => ({
+      previousSlide: currentSlide,
+      activeSlide: slideIndex,
+    }));
+  };
+
   return (
     <section className="confidence-section">
       <div className="confidence-container">
-        {/* Left: Luxury Property Image */}
         <div className="confidence-image-col">
-          <img 
-            src={propertyImg} 
-            alt="Luxury Interior" 
-            className="confidence-image"
+          <img
+            src={galleryImages[previousSlide].src}
+            alt=""
+            className="confidence-image confidence-image-previous"
+            aria-hidden="true"
+          />
+          <img
+            key={activeSlide}
+            src={galleryImages[activeSlide].src}
+            alt={galleryImages[activeSlide].alt}
+            className={`confidence-image confidence-image-current${activeSlide !== previousSlide ? ' slide-in' : ''}`}
             loading="lazy"
             decoding="async"
           />
-          {/* Subtle slider dots like original */}
-          <div className="confidence-dots">
-            <span className="dot active"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
+          <div className="confidence-dots" aria-label="Property gallery navigation">
+            {galleryImages.map((image, index) => (
+              <button
+                key={image.src}
+                type="button"
+                className={`dot${index === activeSlide ? ' active' : ''}`}
+                aria-label={`Show gallery image ${index + 1}`}
+                aria-current={index === activeSlide ? 'true' : undefined}
+                onClick={() => goToSlide(index)}
+              />
+            ))}
           </div>
         </div>
 

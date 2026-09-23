@@ -503,13 +503,53 @@
 .confidence-image-col {
   position: relative;
   overflow: hidden;
+  min-height: 600px;
+  background: #0b1a2e; /* kills the white flash between swaps */
 }
 
 .confidence-image {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 40%; /* bias crop toward subject; tune as needed */
   display: block;
+}
+
+.confidence-image-previous {
+  z-index: 1;
+}
+
+.confidence-image-current {
+  z-index: 2;
+}
+
+/* Crossfade + gentle scale reveal. Direction-agnostic, no hard wipe. */
+.confidence-image-current.slide-in {
+  animation: confidenceImageReveal 1200ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes confidenceImageReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .confidence-image-current.slide-in {
+    animation: confidenceImageFade 300ms ease both;
+  }
+}
+
+@keyframes confidenceImageFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .confidence-dots {
@@ -518,7 +558,7 @@
   left: 24px;
   display: flex;
   gap: 8px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .confidence-dots .dot {
@@ -526,6 +566,12 @@
   height: 8px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.4);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              background 0.35s ease,
+              border-radius 0.35s ease;
 }
 
 .confidence-dots .dot.active {
