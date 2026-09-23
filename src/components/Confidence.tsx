@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import galleryImage1 from '../assets/gallery/newgallery3.png';
-import galleryImage2 from '../assets/gallery/newgallery1.png';
-import galleryImage3 from '../assets/gallery/newgallery2.png';
-import galleryImage4 from '../assets/gallery/gallery3.png';
+import galleryImage1 from '../assets/gallery/optimized/newgallery3.webp';
+import galleryImage2 from '../assets/gallery/optimized/newgallery1.webp';
+import galleryImage3 from '../assets/gallery/optimized/newgallery2.webp';
+import galleryImage4 from '../assets/gallery/optimized/gallery3.webp';
 
 const galleryImages = [
   { src: galleryImage1, alt: 'Luxury property interior' },
   { src: galleryImage2, alt: 'Elegant property interior' },
-  { src: galleryImage3, alt: 'Refined living space' },
+  { src: galleryImage3, alt: 'RE/MAX Premier team at an event' },
   { src: galleryImage4, alt: 'Premium property interior' },
 ];
 
@@ -18,6 +18,11 @@ export const Confidence: React.FC = () => {
   });
 
   useEffect(() => {
+    galleryImages.forEach(({ src }) => {
+      const image = new Image();
+      image.src = src;
+    });
+
     const slideshow = window.setInterval(() => {
       setSlideState(({ activeSlide: currentSlide }) => ({
         previousSlide: currentSlide,
@@ -50,7 +55,8 @@ export const Confidence: React.FC = () => {
             src={galleryImages[activeSlide].src}
             alt={galleryImages[activeSlide].alt}
             className={`confidence-image confidence-image-current${activeSlide !== previousSlide ? ' slide-in' : ''}`}
-            loading="lazy"
+            loading="eager"
+            fetchPriority="high"
             decoding="async"
           />
           <div className="confidence-dots" aria-label="Property gallery navigation">
