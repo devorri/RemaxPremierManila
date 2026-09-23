@@ -497,13 +497,13 @@
 .confidence-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 600px;
 }
 
 .confidence-image-col {
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  align-self: start;
+  aspect-ratio: 16 / 9;
   background: #0b1a2e; /* kills the white flash between swaps */
 }
 
@@ -922,7 +922,7 @@
   }
 
   .confidence-image-col {
-    min-height: 380px;
+    min-height: 0;
   }
 
   .confidence-text-col {
