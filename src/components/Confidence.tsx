@@ -3,12 +3,26 @@ import galleryImage1 from '../assets/gallery/optimized/newgallery3.webp';
 import galleryImage2 from '../assets/gallery/optimized/newgallery1.webp';
 import galleryImage3 from '../assets/gallery/optimized/newgallery2.webp';
 import galleryImage4 from '../assets/gallery/optimized/gallery4new.webp';
+import galleryImage5 from '../assets/gallery/optimized/gallery11.webp';
+import galleryImage6 from '../assets/gallery/optimized/gallery5.webp';
+import galleryImage7 from '../assets/gallery/optimized/gallery6.webp';
+import galleryImage8 from '../assets/gallery/optimized/gallery7.webp';
+import galleryImage9 from '../assets/gallery/optimized/newgallery8.webp';
+import galleryImage10 from '../assets/gallery/optimized/gallery9.webp';
+import galleryImage11 from '../assets/gallery/optimized/gallery10.webp';
 
 const galleryImages = [
   { src: galleryImage1, alt: 'Luxury property interior' },
   { src: galleryImage2, alt: 'Elegant property interior' },
   { src: galleryImage3, alt: 'RE/MAX Premier team at an event' },
   { src: galleryImage4, alt: 'Premium property interior' },
+  { src: galleryImage5, alt: 'Premium property showcase' },
+  { src: galleryImage6, alt: 'Modern property interior' },
+  { src: galleryImage7, alt: 'Contemporary property exterior' },
+  { src: galleryImage8, alt: 'Inviting property living space' },
+  { src: galleryImage9, alt: 'Refined property interior' },
+  { src: galleryImage10, alt: 'Bright property interior' },
+  { src: galleryImage11, alt: 'Luxury property detail' },
 ];
 
 export const Confidence: React.FC = () => {

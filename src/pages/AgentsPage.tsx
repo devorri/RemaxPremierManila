@@ -1,9 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import logoImage from '../assets/remax-premier-logo.png';
-import gumersindoImg from '../assets/partners/gumersindo.png';
-import glennisImg from '../assets/partners/glennis.png';
-import carloImg from '../assets/partners/carlo.png';
-import maryAnneImg from '../assets/partners/maryanne.png';
+import logoImage from '../assets/remax-premier-logo.webp';
+import gumersindoImg from '../assets/partners/gumersindo.webp';
+import glennisImg from '../assets/partners/glennis.webp';
+import carloImg from '../assets/partners/carlo.webp';
+import maryAnneImg from '../assets/partners/maryanne.webp';
 
 interface Partner {
   name: string;

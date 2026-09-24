@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import gumersindoImg from '../assets/partners/gumersindo.png';
-import glennisImg from '../assets/partners/glennis.png';
-import carloImg from '../assets/partners/carlo.png';
-import maryAnneImg from '../assets/partners/maryanne.png';
-import aboutHeroImg from '../assets/gallery/hero.png';
-import foundingStoryImg1 from '../assets/gallery/gallery1.png';
-import foundingStoryImg2 from '../assets/gallery/gallery2.png';
-import trustImg from '../assets/gallery/gallery4.png';
+import gumersindoImg from '../assets/partners/gumersindo.webp';
+import glennisImg from '../assets/partners/glennis.webp';
+import carloImg from '../assets/partners/carlo.webp';
+import maryAnneImg from '../assets/partners/maryanne.webp';
+import aboutHeroImg from '../assets/gallery/hero.webp';
+import foundingStoryImg1 from '../assets/gallery/gallery1.webp';
+import foundingStoryImg2 from '../assets/gallery/gallery2.webp';
+import trustImg from '../assets/gallery/gallery4.webp';
 
 const partners = [
   {

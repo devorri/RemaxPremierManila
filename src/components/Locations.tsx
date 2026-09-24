@@ -1,8 +1,8 @@
 import React from 'react';
-import bgcImg from '../assets/places/bgc.jpg';
-import forbesImg from '../assets/places/forbes.png';
-import beachesImg from '../assets/places/beaches.png';
-import rawlandImg from '../assets/places/rawland.png';
+import bgcImg from '../assets/places/bgc.webp';
+import forbesImg from '../assets/places/forbes.webp';
+import beachesImg from '../assets/places/beaches.webp';
+import rawlandImg from '../assets/places/rawland.webp';
 
 interface OfficeLocation {
   name: string;

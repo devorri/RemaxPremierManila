@@ -497,13 +497,13 @@
 .confidence-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  aspect-ratio: 32 / 9;
 }
 
 .confidence-image-col {
   position: relative;
   overflow: hidden;
-  align-self: start;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   background: #0b1a2e; /* kills the white flash between swaps */
 }
 
@@ -585,17 +585,20 @@
   background: linear-gradient(135deg, #b81b29 0%, #9e1823 100%);
   display: flex;
   align-items: center;
-  padding: 80px 72px;
+  min-width: 0;
+  height: 100%;
+  padding: clamp(24px, 3vw, 48px) clamp(24px, 4.5vw, 72px);
   color: #ffffff;
 }
 
 .confidence-content {
+  width: 100%;
   max-width: 520px;
 }
 
 .confidence-heading {
   font-family: var(--font-serif);
-  font-size: clamp(38px, 3.8vw, 56px);
+  font-size: clamp(34px, 3.4vw, 56px);
   font-weight: 500;
   line-height: 1.15;
   margin-bottom: 24px;
@@ -631,6 +634,22 @@
 .btn-confidence:hover {
   background: rgba(255, 255, 255, 0.2);
   border-color: #ffffff;
+}
+
+@media (max-width: 1400px) {
+  .confidence-container {
+    grid-template-columns: 1fr;
+    aspect-ratio: auto;
+  }
+
+  .confidence-image-col {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .confidence-text-col {
+    height: auto;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -892,7 +911,7 @@
 /* --------------------------------------------------------------------------
    Responsive Breakpoints
    -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   .header-top,
   .header-scrolled {
     padding: 16px 24px;
@@ -926,7 +945,8 @@
   }
 
   .confidence-text-col {
-    padding: 60px 32px;
+    aspect-ratio: auto;
+    padding: 32px;
   }
 
   .locations-container {

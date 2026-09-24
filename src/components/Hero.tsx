@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroBg from '../assets/hero_bg.jpg';
+import heroBg from '../assets/hero_bg.webp';
 
 export const Hero: React.FC = () => {
   const scrollToAbout = () => {

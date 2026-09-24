@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from '../assets/remax-premier-logo.png';
+import logoImage from '../assets/remax-premier-logo.webp';
 
 interface LogoProps {
   className?: string;

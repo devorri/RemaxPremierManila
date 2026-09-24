@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logoImage from '../assets/remax-premier-logo.png';
+import logoImage from '../assets/remax-premier-logo.webp';
 
 export const SplashScreen: React.FC = () => {
   const [show, setShow] = useState(true);
