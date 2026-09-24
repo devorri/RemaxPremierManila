@@ -4,7 +4,7 @@ import galleryImage2 from '../assets/gallery/optimized/newgallery1.webp';
 import galleryImage3 from '../assets/gallery/optimized/newgallery2.webp';
 import galleryImage4 from '../assets/gallery/optimized/gallery4new.webp';
 import galleryImage5 from '../assets/gallery/optimized/gallery11.webp';
-import galleryImage6 from '../assets/gallery/optimized/gallery5.webp';
+import galleryImage6 from '../assets/gallery/optimized/newgallery5.webp';
 import galleryImage7 from '../assets/gallery/optimized/gallery6.webp';
 import galleryImage8 from '../assets/gallery/optimized/gallery7.webp';
 import galleryImage9 from '../assets/gallery/optimized/newgallery8.webp';
