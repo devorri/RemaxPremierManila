@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import heroBg from '../assets/hero_bg.webp';
 
 export const Hero: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Attempt autoplay programmatically for browser compatibility
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {
+        // Autoplay policy prevented playback, poster remains visible
+      });
+    }
+  }, []);
+
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
@@ -11,7 +21,24 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="hero-section" style={{ backgroundImage: `url(${heroBg})` }}>
+    <section className="hero-section">
+      <div className="hero-video-wrapper">
+        <video
+          ref={videoRef}
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          poster="/videos/hero-poster.webp"
+          aria-hidden="true"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="/videos/hero.webm" type="video/webm" />
+        </video>
+      </div>
+
       <div className="hero-overlay">
         <div className="hero-content">
           <p className="hero-subtitle">REMAX Premier Manila</p>
@@ -55,3 +82,4 @@ export const Hero: React.FC = () => {
     </section>
   );
 };
+
