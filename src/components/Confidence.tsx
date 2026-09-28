@@ -42,7 +42,7 @@ export const Confidence: React.FC = () => {
         previousSlide: currentSlide,
         activeSlide: (currentSlide + 1) % galleryImages.length,
       }));
-    }, 4000);
+    }, 2000);
 
     return () => window.clearInterval(slideshow);
   }, []);
@@ -97,7 +97,12 @@ export const Confidence: React.FC = () => {
               Buying, selling, leasing, or investing in property is a major decision and confidence matters. With REMAX Premier's expertise, network, and commitment to service excellence, clients gain more than transactions; they gain trusted advisors.
             </p>
             <div className="confidence-actions">
-              <a href="#find-property" className="btn-confidence">
+              <a
+                href="https://docs.google.com/forms/d/1v07lGexpYCBXVdfs5NP5z_lHYQP1BEb0tr2W_j4ehhA/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-confidence"
+              >
                 Find a Property
               </a>
               <a href="#list-property" className="btn-confidence">

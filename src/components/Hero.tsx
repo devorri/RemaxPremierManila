@@ -5,12 +5,13 @@ export const Hero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
     // Attempt autoplay programmatically for browser compatibility
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Autoplay policy prevented playback, poster remains visible
-      });
-    }
+    video.play().catch(() => {
+      // Autoplay policy prevented playback, poster remains visible
+    });
   }, []);
 
   const scrollToAbout = () => {
@@ -82,4 +83,3 @@ export const Hero: React.FC = () => {
     </section>
   );
 };
-

@@ -686,13 +686,57 @@
    6. Join Team Section
    -------------------------------------------------------------------------- */
 .join-team-section {
-  padding: 120px 24px;
+  padding: 100px 24px;
   background-color: #ffffff;
   text-align: center;
 }
 
+.join-team-video-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 52px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 44px rgba(0, 29, 72, 0.1);
+  border: 1px solid rgba(0, 29, 72, 0.08);
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-team-video-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 54px rgba(0, 29, 72, 0.14);
+}
+
+.join-team-video-iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  border: none;
+  overflow: hidden;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .join-team-section {
+    padding: 60px 16px;
+  }
+
+  .join-team-video-wrapper {
+    margin-bottom: 36px;
+    border-radius: 16px;
+  }
+
+  .join-team-video-iframe {
+    height: 520px;
+  }
+}
+
 .join-team-container {
-  max-width: 780px;
+  max-width: 1050px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -701,11 +745,12 @@
 
 .join-team-heading {
   font-family: var(--font-serif);
-  font-size: clamp(40px, 4.4vw, 64px);
+  font-size: clamp(36px, 4.2vw, 56px);
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--brandPrimary-main);
   margin-bottom: 24px;
+  max-width: 1000px;
 }
 
 .join-team-heading em {
@@ -714,10 +759,11 @@
 }
 
 .join-team-description {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.85;
   color: #4a5568;
   margin-bottom: 36px;
+  max-width: 780px;
 }
 
 /* --------------------------------------------------------------------------
