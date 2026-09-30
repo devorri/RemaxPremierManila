@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
 
       <div className="hero-overlay">
         <div className="hero-content">
-          <p className="hero-subtitle">REMAX Premier Manila</p>
+          <p className="hero-subtitle">REMAX Premier Philippines</p>
           <h1 className="hero-title">
             Your Property Deserves the Right Strategy.
           </h1>
