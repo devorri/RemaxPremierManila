@@ -15,7 +15,7 @@ interface Partner {
 }
 
 const allPartners: Partner[] = [
-  { name: "Gumersindo Camcam", role: "Chairman", locations: "REMAX Premier", image: gumersindoImg, phone: "(+63) 918 940 3919", email: "juncamcam@yahoo.com" },
+  { name: "Jun Camcam", role: "Chairman", locations: "REMAX Premier", image: gumersindoImg, phone: "(+63) 918 940 3919", email: "juncamcam@yahoo.com" },
   { name: "Glennis DR Nitafan", role: "President", locations: "REMAX Premier", image: glennisImg, phone: "(+63) 917 822 5798", email: "gnitafan@gmail.com" },
   { name: "Carlo Lopez", role: "Partner", locations: "REMAX Premier", image: carloImg, phone: "(+63) 917 891 0290", email: "carlorlopez@gmail.com" },
   { name: "Mary Anne Meily", role: "Associate", locations: "REMAX Premier", image: maryAnneImg, phone: "(+63) 939 997 8888", email: "maryannemeily14@gmail.com" },
